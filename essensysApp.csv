@@ -1,0 +1,16 @@
+AppName,app,destinationUrl
+GoogleDNS1,goggledns,http://8.8.8.8
+GoogleDNS2,googledns,http:/8.8.4.4
+Office365,office365,https://outlook.office365.com:443
+Teams1,teams,https://teams.events.data.microsoft.com:443
+Teams2,teams,https://presence.teams.microsoft.com:443
+Connect,connect,http://connect.ess ensys.tech
+AWS-ap-southeast-1,aws,http://dynamodb.ap-southeast-1.amazonaws.com/ping
+AWS-us-east-1,aws,http://dynamodb.us-east-1.amazonaws.com/ping
+AWS-eu-west-1,aws,http://dynamodb.eu-west-1.amazonaws.com/ping
+Zoom1,zoom,https://us06calendarapi.zoom.us
+Zoom2,zoom,https://xmppapi.zoom.us
+Apple1,apple,https://gs-loc.apple.com
+Apple2,apple,https://captive.apple.com
+OpenDNS1,opendns,https://doh.opendns.com
+OpemDNS2,opendns,https://api.opendns.com

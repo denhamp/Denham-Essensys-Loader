@@ -1,0 +1,14 @@
+cloud,location,destinationUrl
+digitalocean,NL-Amsterdam-AMS2,http://speedtest-ams2.digitalocean.com/test_checksums.txt
+digitalocean,NL-Amsterdam-AMS3,http://speedtest-ams3.digitalocean.com/test_checksums.txt
+digitalocean,IN-Bangalore-BLR1,http://speedtest-blr1.digitalocean.com/test_checksums.txt
+digitalocean,DE-Frankfurt-FRA1,http://speedtest-fra1.digitalocean.com/test_checksums.txt
+digitalocean,UK-London-LON1,http://speedtest-lon1.digitalocean.com/test_checksums.txt
+digitalocean,US-NewYork-NYC1,http://speedtest-nyc1.digitalocean.com/test_checksums.txt
+digitalocean,US-NewYork-NYC2,http://speedtest-nyc2.digitalocean.com/test_checksums.txt
+digitalocean,US-NewYork-NYC3,http://speedtest-nyc3.digitalocean.com/test_checksums.txt
+digitalocean,US-SanFrancisco-SFO1,http://speedtest-sfo1.digitalocean.com/test_checksums.txt
+digitalocean,US-SanFrancisco-SFO2,http://speedtest-sfo2.digitalocean.com/test_checksums.txt
+digitalocean,US-SanFrancisco-SFO3,http://speedtest-sfo3.digitalocean.com/test_checksums.txt
+digitalocean,SG-Singapore-SGP1,http://speedtest-sgp1.digitalocean.com/test_checksums.txt
+digitalocean,CA-Toronto-TOR1,http://speedtest-tor1.digitalocean.com/test_checksums.txt

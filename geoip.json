@@ -1,0 +1,26 @@
+{
+    "ip": "90.251.254.223",
+    "location": {
+        "country": "GB",
+        "region": "England",
+        "city": "London",
+        "lat": 51.50853,
+        "lng": -0.12574,
+        "postalCode": "",
+        "timezone": "+00:00",
+        "geonameId": 2643743
+    },
+    "domains": [
+        "static-90-251-254-223.vodafonexdsl.co.uk",
+        "denham2.hopto.org"
+    ],
+    "as": {
+        "asn": 5378,
+        "name": "unspecified",
+        "route": "90.248.0.0\/14",
+        "domain": "vodafone.com",
+        "type": "Not Disclosed"
+    },
+    "isp": "Vodafone Limited",
+    "connectionType": "mobile"
+}
