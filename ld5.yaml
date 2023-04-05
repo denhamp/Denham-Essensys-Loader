@@ -1,0 +1,11 @@
+---
+tenant:
+  url: "https://essensys-uk.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-ld5-01
+  location: ld5
+  lat: 51.5224625
+  lon: -0.6312437
+source:
+  file: "Ld5_App.json"

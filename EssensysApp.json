@@ -1,15 +1,5 @@
 [
     {
-        "AppName": "GoogleDNS1",
-        "app": "goggledns",
-        "destinationUrl": "http://8.8.8.8"
-    },
-    {
-        "AppName": "GoogleDNS2",
-        "app": "googledns",
-        "destinationUrl": "http://8.8.4.4"
-    },
-    {
         "AppName": "Office365",
         "app": "office365",
         "destinationUrl": "https://outlook.office365.com:443"
@@ -30,18 +20,23 @@
         "destinationUrl": "http://connect.essensys.tech"
     },
     {
+        "AppName": "Operate",
+        "app": "operate",
+        "destinationUrl": "http://operate.essensys.tech"
+    },
+    {
         "AppName": "AWS-ap-southeast-1",
-        "app": "aws",
+        "app": "Apac",
         "destinationUrl": "http://dynamodb.ap-southeast-1.amazonaws.com/ping"
     },
     {
         "AppName": "AWS-us-east-1",
-        "app": "aws",
+        "app": "Us",
         "destinationUrl": "http://dynamodb.us-east-1.amazonaws.com/ping"
     },
     {
         "AppName": "AWS-eu-west-1",
-        "app": "aws",
+        "app": "Eu",
         "destinationUrl": "http://dynamodb.eu-west-1.amazonaws.com/ping"
     },
     {

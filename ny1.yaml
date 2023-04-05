@@ -1,0 +1,11 @@
+---
+tenant:
+  url: "https://essensys-us.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-
+  location:
+  lat:
+  lon:
+source:
+  file:
