@@ -85,7 +85,7 @@ def add_session():
         sessionName = agentName + "-" + AppName
         destinationUrl = items["destinationUrl"]
         # CREATE SESSION ID FROM UUID GENERATOR MODULE
-        sessionId = str(uuid.uuid4())
+        sessionId = items['sessionid']
         # BRING VALUES INTO JSON FORMAT FOR API
         session_data = {
             "data": {
