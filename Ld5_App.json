@@ -3,84 +3,70 @@
         "AppName": "Office365",
         "app": "office365",
         "destinationUrl": "https://outlook.office365.com:443",
-        "sessionid": "f5215b9d-e413-485b-9844-0848b8a180bb"
     },
     {
         "AppName": "Teams1",
         "app": "teams",
         "destinationUrl": "https://teams.events.data.microsoft.com:443",
-        "sessionid": "2845e579-4456-4120-9720-59fe9acdc1a5"
     },
     {
         "AppName": "Teams2",
         "app": "teams",
         "destinationUrl": "https://presence.teams.microsoft.com:443",
-        "sessionid": "3644cf31-bd55-4d4b-91ef-3082f2d823cb"
     },
     {
         "AppName": "Connect",
         "app": "connect",
         "destinationUrl": "http://connect.essensys.tech",
-        "sessionid": "83182000-817e-49bb-8e2f-e270c358e5c5"
     },
     {
         "AppName": "Operate",
         "app": "operate",
         "destinationUrl": "http://operate.essensys.tech",
-        "sessionid": "1b86c668-b271-4836-84f8-b717ea557aaf"
     },
     {
         "AppName": "AWS-ap-southeast-1",
         "app": "Apac",
         "destinationUrl": "http://dynamodb.ap-southeast-1.amazonaws.com/ping",
-        "sessionid": "645a9379-a2de-4b30-bc9c-39063e94d0fe"
     },
     {
         "AppName": "AWS-us-east-1",
         "app": "Us",
         "destinationUrl": "http://dynamodb.us-east-1.amazonaws.com/ping",
-        "sessionid": "2474bff5-bfd4-431e-9fc1-18b04afe4887"
     },
     {
         "AppName": "AWS-eu-west-1",
         "app": "Eu",
         "destinationUrl": "http://dynamodb.eu-west-1.amazonaws.com/ping",
-        "sessionid": "6e7154c8-480a-4717-90be-1cbb617a4d54"
     },
     {
         "AppName": "Zoom1",
         "app": "zoom",
         "destinationUrl": "https://us06calendarapi.zoom.us",
-        "sessionid": "b32a97b2-eca9-4ebf-93bf-91a2df3cbcb4"
     },
     {
         "AppName": "Zoom2",
         "app": "zoom",
         "destinationUrl": "https://xmppapi.zoom.us",
-        "sessionid": "a2f48433-43d5-469c-8f11-e447fcdb4fc6items['session"
     },
     {
         "AppName": "Apple1",
         "app": "apple",
         "destinationUrl": "https://gs-loc.apple.com",
-        "sessionid": "c1db07c3-3433-4a6c-b4dc-558d29a47ad1"
     },
     {
         "AppName": "Apple2",
         "app": "apple",
         "destinationUrl": "https://captive.apple.com",
-        "sessionid": "fc7a03e1-f67c-4fc1-8593-be5162dabef4"
     },
     {
         "AppName": "OpenDNS1",
         "app": "opendns",
         "destinationUrl": "https://doh.opendns.com",
-        "sessionid": "1aca626f-991c-48be-99bb-95d8c0d7c2b7"
     },
     {
         "AppName": "OpenDNS2",
         "app": "opendns",
         "destinationUrl": "https://api.opendns.com",
-        "sessionid": "4758489b-d98a-452d-a9af-f21c238e74f4"
     }
 ]
