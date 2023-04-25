@@ -1,0 +1,13 @@
+---
+tenant:
+  url: "https://essensys-us.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-at4-01
+  location: at4
+  lat: 33.8954451
+  lon: -84.4558052
+  city: Atlanta
+  address: "450 Interstate to N PKWY, Atlanta, GA,30339"
+source:
+  file: "EssensysApp.json"

@@ -1,0 +1,13 @@
+---
+tenant:
+  url: "https://essensys-us.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-sv2-01
+  location: sv2
+  lat: 37.378663
+  lon: -121.9570974
+  city: Santa Clara
+  address: "1350 Duane Ave, Santa Clara, CA, 95054"
+source:
+  file: "EssensysApp.json"

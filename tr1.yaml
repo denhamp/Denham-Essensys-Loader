@@ -1,0 +1,13 @@
+---
+tenant:
+  url: "https://essensys-us.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-tr1-01
+  data_centre: tr1
+  lat: 43.6447584
+  lon: -79.3863628
+  city: Toronto
+  site_name: "151 Front Street West, Toronto, M5J 2N1"
+source:
+  file: "EssensysApp.json"

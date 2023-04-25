@@ -1,0 +1,13 @@
+---
+tenant:
+  url: "https://essensys-us.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-se2-01
+  location: se2
+  lat: 47.6143474
+  lon: -122.341077
+  city: Seattle
+  address: "2001 Sixth Ave, The Westin Building, Suite 1202, Seattle, 98121"
+source:
+  file: "EssensysApp.json"

@@ -1,0 +1,13 @@
+---
+tenant:
+  url: "https://essensys-us.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-da1-01
+  location: da1
+  lat: 32.8007033
+  lon: -96.8213839
+  city: Dallas
+  address: "1950 North Stemmons Freeway, Suite 1034, Dallas, TX, 75207"
+source:
+  file: "EssensysApp.json"
