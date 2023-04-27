@@ -1,0 +1,67 @@
+[
+    {
+        "AppName": "microsoft-365",
+        "app": "microsoft-365",
+        "destinationUrl": "https://outlook.office365.com:443"
+    },
+    {
+        "AppName": "teams-1",
+        "app": "teams",
+        "destinationUrl": "https://worldaz.tr.teams.microsoft.com:443"
+    },
+    {
+        "AppName": "teams-2",
+        "app": "teams",
+        "destinationUrl": "https://teams.microsoft.com:443"
+    },
+    {
+        "AppName": "platform",
+        "app": "platform",
+        "destinationUrl": "http://essensys.platform.essensys.tech/en/"
+    },
+    {
+        "AppName": "connect",
+        "app": "connect",
+        "destinationUrl": "http://connect.essensys.tech/auth/login"
+    },
+    {
+        "AppName": "operate",
+        "app": "operate",
+        "destinationUrl": "http://operate-eu.essensys.tech/SPACECONTROL/v2/Login.aspx"
+    },
+    {
+        "AppName": "aws-apse1",
+        "app": "aws-apse1",
+        "destinationUrl": "http://dynamodb.ap-southeast-1.amazonaws.com/ping"
+    },
+    {
+        "AppName": "aws-usea1",
+        "app": "aws-usea1",
+        "destinationUrl": "http://dynamodb.us-east-1.amazonaws.com/ping"
+    },
+    {
+        "AppName": "aws-euwe1",
+        "app": "aws-euwe1",
+        "destinationUrl": "http://dynamodb.eu-west-1.amazonaws.com/ping"
+    },
+    {
+        "AppName": "zoom-1",
+        "app": "zoom",
+        "destinationUrl": "https://us06calendarapi.zoom.us"
+    },
+    {
+        "AppName": "zoom-2",
+        "app": "zoom",
+        "destinationUrl": "https://xmppapi.zoom.us"
+    },
+    {
+        "AppName": "apple-1",
+        "app": "apple",
+        "destinationUrl": "https://gs-loc.apple.com"
+    },
+    {
+        "AppName": "apple-2",
+        "app": "apple",
+        "destinationUrl": "https://captive.apple.com"
+    }
+]

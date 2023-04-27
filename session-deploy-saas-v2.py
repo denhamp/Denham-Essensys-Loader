@@ -14,11 +14,17 @@ with open(config_file, 'r') as config:
 print(config_data['tenant'])
 tenant_url = config_data['tenant']['url']
 username = config_data['tenant']['username']
+
 source_file = config_data['source']['file']
+
 agentName = config_data['agent']['name']
-agentLocation = config_data['agent']['location']
+agentLocation = config_data['agent']['data_centre']
 agentLat = config_data['agent']['lat']
 agentLon = config_data['agent']['lon']
+agentcity = config_data['agent']['city']
+site_name = config_data['agent']['site_name']
+agentrole = config_data['agent']['agentrole']
+
 password = getpass.getpass(prompt='Enter your tenant password: ')
 
 # SOURCE FILE FOR SESSION CONFIGURATION DATA: INCLUDES CLOUD, LOCATION AND DESTINATION URL FOR SELECTED AGENT
@@ -85,7 +91,7 @@ def add_session():
         sessionName = agentName + "-" + AppName
         destinationUrl = items["destinationUrl"]
         # CREATE SESSION ID FROM UUID GENERATOR MODULE
-        sessionId = items['sessionid']
+        sessionId = str(uuid.uuid4())
         # BRING VALUES INTO JSON FORMAT FOR API
         session_data = {
             "data": {
@@ -111,7 +117,7 @@ def add_session():
         }
         # POST SESSION DATA TO API AS JSON
         # add_session_post = login_session.post(
-        #    session_config_url, headers=api_headers, data=json.dumps(session_data))
+        #     session_config_url, headers=api_headers, data=json.dumps(session_data))
         # add_session_post_text = add_session_post.text
 
         parse_url = urlparse(destinationUrl)
@@ -139,8 +145,12 @@ def add_session():
                         {
                             "objectName": sessionName,
                             "metadata": {
-                                "app": str(app),
-                                "data_centre": str(agentLocation)
+                                "appid": str(app),
+                                "data_centre": str(agentLocation),
+                                "destinationurl": str(destinationUrl),
+                                "sourcelocation": str(agentLocation),
+                                "site_name": str(site_name),
+                                "agentrole": str(agentrole)
                             },
                             "sourceLocation": {
                                 "lat": agentLat,
@@ -155,6 +165,8 @@ def add_session():
                 }
             }
         }
+
+        print('session_data', session_data)
         # POST SESSION DATA TO API AS JSON
         metadata_session_post = metadata_session.post(
             meta_url, headers=api_headers, data=json.dumps(session_data))

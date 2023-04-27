@@ -4,10 +4,11 @@ tenant:
   username: "dpearce@accedian.com"
 agent:
   name: acc-xfr-ny1-01
-  location: ny1
+  data_centre: ny1
   lat: 40.7433097
   lon: -74.0101262
   city: New York
-  address: "85 10th Ave, New York, NY 10011"
+  site_name: "85 10th Ave, New York, NY 10011"
+  agentrole: "primary"
 source:
-  file: "EssensysApp.json"
+  file: "EssensysAppUS.json"

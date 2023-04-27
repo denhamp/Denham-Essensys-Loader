@@ -3,12 +3,12 @@ tenant:
   url: "https://essensys-uk.analytics.accedian.io"
   username: "dpearce@accedian.com"
 agent:
-  name: acc-xfr-ld5-01
-  data_centre: ld5
-  lat: 51.5224625
-  lon: -0.6312437
+  name: acc-xfr-thw-01
+  data_centre: thw
+  lat: 51.5112179
+  lon: -0.0044693
   city: "London"
-  site_name: "8 Buckingham Avenue, Slough, SL1 4AX"
+  site_name: "Coriander Ave, London E14 2AA"
   agentrole: "primary"
 source:
   file: "EssensysAppUK.json"

@@ -1,0 +1,14 @@
+---
+tenant:
+  url: "https://essensys-asia.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-sy4-01
+  data_centre: sy4
+  lat: -33.9182045
+  lon: 151.1871677
+  city: "Sydney"
+  site_name: "200 Bourke Road, Alexandria, Sydney, AU, NSW 2015"
+  agentrole: "primary"
+source:
+  file: "EssensysAppAPAC.json"

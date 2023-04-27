@@ -4,10 +4,11 @@ tenant:
   username: "dpearce@accedian.com"
 agent:
   name: acc-xfr-ny2-01
-  location: ny2
+  data_centre: ny2
   lat: 40.7768363
   lon: -74.0776029
   city: New York
-  address: "275 Hartz Way, Secaucus, NJ, 07094"
+  site_name: "275 Hartz Way, Secaucus, NJ, 07094"
+  agentrole: "primary"
 source:
-  file: "EssensysApp.json"
+  file: "EssensysAppUS.json"

@@ -7,7 +7,8 @@ agent:
   data_centre: tr1
   lat: 43.6447584
   lon: -79.3863628
-  city: Toronto
+  city: "Toronto"
   site_name: "151 Front Street West, Toronto, M5J 2N1"
+  agentrole: "primary"
 source:
-  file: "EssensysApp.json"
+  file: "EssensysAppUS.json"
