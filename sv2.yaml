@@ -4,10 +4,11 @@ tenant:
   username: "dpearce@accedian.com"
 agent:
   name: acc-xfr-sv2-01
-  location: sv2
+  data_centre: sv2
   lat: 37.378663
   lon: -121.9570974
-  city: Santa Clara
-  address: "1350 Duane Ave, Santa Clara, CA, 95054"
+  city: "Santa Clara"
+  site_name: "1350 Duane Ave, Santa Clara, CA, 95054"
+  agentrole: "primary"
 source:
-  file: "EssensysApp.json"
+  file: "EssensysAppUS.json"
