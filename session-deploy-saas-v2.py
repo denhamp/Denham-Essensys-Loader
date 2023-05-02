@@ -145,12 +145,12 @@ def add_session():
                         {
                             "objectName": sessionName,
                             "metadata": {
-                                "appid": str(app),
+                                "app_id": str(app),
                                 "data_centre": str(agentLocation),
-                                "destinationurl": str(destinationUrl),
-                                "sourcelocation": str(agentLocation),
+                                "destination_url": str(destinationUrl),
+                                "source_location": str(agentLocation),
                                 "site_name": str(site_name),
-                                "agentrole": str(agentrole)
+                                "agent_role": str(agentrole)
                             },
                             "sourceLocation": {
                                 "lat": agentLat,
