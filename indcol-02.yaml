@@ -1,0 +1,14 @@
+---
+tenant:
+  url: "https://essensys-uk.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-indcol-02
+  lat: 48.8715828
+  lon: 2.3073795
+  city: "Paris"
+  sitecode: "indcol"
+  site_name: "31, rue du Colisée, Paris, Île-de-France, 75008, France"
+  agentrole: "backup"
+source:
+  file: "EssensysAppUK.json"

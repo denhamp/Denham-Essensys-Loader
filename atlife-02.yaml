@@ -1,0 +1,14 @@
+---
+tenant:
+  url: "https://essensys-uk.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-atlife-02
+  lat: 59.3471015
+  lon: 18.0309409
+  city: "Stockholm"
+  sitecode: "atlife"
+  site_name: "LifeCity, Solnavägen 3, Solna, Stockholm, Uppland, 171 65, Sweden"
+  agentrole: "backup"
+source:
+  file: "EssensysAppUK.json"

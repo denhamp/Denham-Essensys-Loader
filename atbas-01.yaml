@@ -1,0 +1,14 @@
+---
+tenant:
+  url: "https://essensys-uk.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-atbas-01
+  lat: 59.4071981
+  lon: 17.8369493
+  city: "Stockholm"
+  sitecode: "atbas"
+  site_name: "Barkarby (Bas Hub), Veddestavägen 10, Stockholm, Uppland, 175 62, Sweden"
+  agentrole: "primary"
+source:
+  file: "EssensysAppUK.json"
