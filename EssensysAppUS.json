@@ -57,11 +57,11 @@
     {
         "AppName": "apple-1",
         "app": "apple",
-        "destinationUrl": "https://gs-loc.apple.com"
+        "destinationUrl": "https://captive.apple.com/library/test/success.html"
     },
     {
         "AppName": "apple-2",
         "app": "apple",
-        "destinationUrl": "https://captive.apple.com"
+        "destinationUrl": "https://captive.apple.com/hotspot-detect.html"
     }
 ]
