@@ -116,9 +116,8 @@ def add_session():
             }
         }
         # POST SESSION DATA TO API AS JSON
-        # add_session_post = login_session.post(
-        #     session_config_url, headers=api_headers, data=json.dumps(session_data))
-        # add_session_post_text = add_session_post.text
+        add_session_post = login_session.post(session_config_url, headers=api_headers, data=json.dumps(session_data))
+        add_session_post_text = add_session_post.text
 
         parse_url = urlparse(destinationUrl)
         parse_url = str(parse_url.netloc)
