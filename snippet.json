@@ -1,0 +1,235 @@
+{
+    "data": {
+        "type": "groupByMetrics",
+        "attributes": {
+            "aggregation": "count",
+            "globalMetricFilterContext": {
+                "direction": [
+                    "0"
+                ],
+                "metadata": {
+                    "include": {
+                        "app": [
+                            "apple"
+                        ]
+                    },
+                    "exclude": {}
+                },
+                "objectType": [
+                    "flowmeter"
+                ]
+            },
+            "groupingContext": {
+                "strictGroupings": true,
+                "groupings": [
+                    {
+                        "groupName": "sitecode",
+                        "groupType": "meta"
+                    }
+                ]
+            },
+            "interval": "2023-04-04T00:22:14.615Z/2023-04-04T08:22:14.615Z",
+            "metrics": [
+                {
+                    "metric": "rowCount",
+                    "direction": [
+                        "0"
+                    ],
+                    "objectType": [
+                        "flowmeter"
+                    ],
+                    "valueBoundary": {
+                        "bin": {
+                            "uuid": "780f1d91-a827-41fa-98cc-4888946301e5"
+                        },
+                        "lower": {
+                            "value": 80,
+                            "strict": false
+                        },
+                        "type": "fixed",
+                        "filterMetric": "fCirUtil"
+                    }
+                },
+                {
+                    "metric": "rowCount",
+                    "direction": [
+                        "0"
+                    ],
+                    "objectType": [
+                        "flowmeter"
+                    ],
+                    "valueBoundary": {
+                        "filterMetric": "fCirUtil",
+                        "type": "fixed",
+                        "lower": {
+                            "strict": true,
+                            "value": -9007199000000000
+                        }
+                    }
+                }
+            ],
+            "queryContext": {
+                "ignoreCleaning": false,
+                "focusBusyHour": false,
+                "ignoreMaintenance": false,
+                "numResults": 10,
+                "sorted": "desc"
+            }
+        }
+    }
+}
+
+
+{
+    "data": {
+        "attributes": {
+            "aggregation": "sum",
+            "globalMetricFilterContext": {
+                "direction": [
+                    "0"
+                ],
+                "metadata": {
+                    "include": {
+                        "type": [
+                            "primary"
+                        ]
+                    }
+                },
+                "objectType": [
+                    "twamp-sf",
+                    "twamp-sl",
+                    "twamp-pe"
+                ]
+            },
+            "granularity": "all",
+            "interval": "2023-05-15T09:41:18.657Z/2023-05-15T10:41:18.657Z",
+            "metrics": [
+                {
+                    "direction": [
+                        "0"
+                    ],
+                    "objectType": [
+                        "twamp-sf",
+                        "twamp-sl",
+                        "twamp-pe"
+                    ],
+                    "valueBoundary": {
+                        "filterMetric": "packetsLostPct",
+                        "lower": {
+                            "value": 0
+                        },
+                        "type": "fixed"
+                    },
+                    "metric": "duration"
+                }
+            ],
+            "queryContext": {
+                "ignoreCleaning": true,
+                "ignoreMaintenance": true
+            },
+            "result": [
+                {
+                    "direction": [
+                        "0"
+                    ],
+                    "objectType": [
+                        "twamp-pe",
+                        "twamp-sf",
+                        "twamp-sl"
+                    ],
+                    "valueBoundary": {
+                        "filterMetric": "packetsLostPct",
+                        "lower": {
+                            "value": 0
+                        },
+                        "type": "fixed"
+                    },
+                    "metric": "duration",
+                    "series": [
+                        {
+                            "timestamp": "2023-05-15T09:41:18.657Z",
+                            "value": 799200000
+                        }
+                    ]
+                }
+            ]
+        },
+        "id": "6e864fa7-139b-4f50-ac2d-326beee188ec",
+        "type": "aggregates"
+    }
+}
+
+{
+    "data": [
+        {
+            "alertState": "cleared",
+            "direction": "2",
+            "dstLat": 53.3498,
+            "dstLon": -6.26031,
+            "duration": 300000,
+            "metadata": {
+                "agent_role": "primary",
+                "app_id": "operate",
+                "data_centre": "thw",
+                "destination_url": "http://operate-eu.essensys.tech/spacecontrol/v2/login.aspx",
+                "site_name": "coriander ave, london e14 2aa",
+                "source_location": "thw"
+            },
+            "metric": "testStatusCode",
+            "mitreTactics": null,
+            "objectId": "ab0437ed-d2ad-43bd-af73-e400b8b06dad",
+            "objectName": "acc-xfr-thw-01-operate",
+            "objectType": "transfer",
+            "policyId": "a4230577-73fc-4e3b-8504-3137f923c6e0",
+            "policyName": "App Error Code Disruption",
+            "policyType": "percentage-violations",
+            "processedTimestamp": 1684207085152,
+            "source": "skylight-spark",
+            "srcLat": 51.51122,
+            "srcLon": -0.0044693,
+            "startTimestamp": 1683245346815,
+            "tenantId": null,
+            "tenantName": "essensys-uk",
+            "timeInViolation": 959918780,
+            "timestamp": 1684205265577,
+            "topology": null,
+            "uid": "7f3786c7-8d76-4898-b276-15646ce3de2c",
+            "value": "0.0"
+        },
+        {
+            "alertState": "cleared",
+            "direction": "2",
+            "dstLat": 53.3498,
+            "dstLon": -6.26031,
+            "duration": 300000,
+            "metadata": {
+                "agent_role": "primary",
+                "app_id": "operate",
+                "data_centre": "thw",
+                "destination_url": "http://operate-eu.essensys.tech/spacecontrol/v2/login.aspx",
+                "site_name": "coriander ave, london e14 2aa",
+                "source_location": "thw"
+            },
+            "metric": "testStatusCode",
+            "mitreTactics": null,
+            "objectId": "ab0437ed-d2ad-43bd-af73-e400b8b06dad",
+            "objectName": "acc-xfr-thw-01-operate",
+            "objectType": "transfer",
+            "policyId": "a4230577-73fc-4e3b-8504-3137f923c6e0",
+            "policyName": "App Error Code Disruption",
+            "policyType": "percentage-violations",
+            "processedTimestamp": 1684207375975,
+            "source": "skylight-spark",
+            "srcLat": 51.51122,
+            "srcLon": -0.0044693,
+            "startTimestamp": 1683245346815,
+            "tenantId": null,
+            "tenantName": "essensys-uk",
+            "timeInViolation": 959918780,
+            "timestamp": 1684205265577,
+            "topology": null,
+            "uid": "7f3786c7-8d76-4898-b276-15646ce3de2c",
+            "value": "0.0"
+        }
+    ]
+}
