@@ -6,26 +6,27 @@ import re
 from urllib.parse import urlparse
 import yaml
 import getpass
+import time
 
 config_file = sys.argv[1]
 
-with open(config_file, 'r') as config:
+with open(config_file, "r") as config:
     config_data = yaml.safe_load(config)
-print(config_data['tenant'])
-tenant_url = config_data['tenant']['url']
-username = config_data['tenant']['username']
+print(config_data["tenant"])
+tenant_url = config_data["tenant"]["url"]
+username = config_data["tenant"]["username"]
 
-source_file = config_data['source']['file']
+source_file = config_data["source"]["file"]
 
-agentName = config_data['agent']['name']
-agentLocation = config_data['agent']['data_centre']
-agentLat = config_data['agent']['lat']
-agentLon = config_data['agent']['lon']
-agentcity = config_data['agent']['city']
-site_name = config_data['agent']['site_name']
-agentrole = config_data['agent']['agentrole']
+agentName = config_data["agent"]["name"]
+agentLocation = config_data["agent"]["data_centre"]
+agentLat = config_data["agent"]["lat"]
+agentLon = config_data["agent"]["lon"]
+agentcity = config_data["agent"]["city"]
+site_name = config_data["agent"]["site_name"]
+agentrole = config_data["agent"]["agentrole"]
 
-password = getpass.getpass(prompt='Enter your tenant password: ')
+password = getpass.getpass(prompt="Enter your tenant password: ")
 
 # SOURCE FILE FOR SESSION CONFIGURATION DATA: INCLUDES CLOUD, LOCATION AND DESTINATION URL FOR SELECTED AGENT
 # source_file = sys.argv[1]
@@ -45,17 +46,23 @@ metadata_session = requests.Session()
 login_session_url = tenant_url + "/api/v1/auth/login"
 print("login_session_url ", login_session_url)
 login_session_headers = {
-    'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
-login_session_payload = {'username': username, 'password': password}
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Accept": "application/json",
+}
+login_session_payload = {"username": username, "password": password}
 login_session_post = login_session.post(
-    login_session_url, headers=login_session_headers, data=login_session_payload)
-token = (login_session_post.headers['Authorization'])
-print('login success')
+    login_session_url, headers=login_session_headers, data=login_session_payload
+)
+token = login_session_post.headers["Authorization"]
+print("login success")
 
 # SESSION CONFIGURATION API INFO
 session_config_url = tenant_url + "/api/orchestrate/v3/agents/session"
-api_headers = {'Content-Type': 'application/vnd.api+json',
-               'Accept': 'application/json', 'Authorization': token}
+api_headers = {
+    "Content-Type": "application/vnd.api+json",
+    "Accept": "application/json",
+    "Authorization": token,
+}
 
 # AGENT NAME
 print(agentName)
@@ -85,7 +92,7 @@ def add_session():
 
     for items in session_json:
         AppName = items["AppName"]
-        app = items['app']
+        app = items["app"]
         # location = items["location"]
         # CREATE SESSION NAME AS CONCATENATION OF AGENT NAME & APPLICATION & SUBAPP (WHICH MAY BE BLANK)
         sessionName = agentName + "-" + AppName
@@ -109,32 +116,35 @@ def add_session():
                             "maximumTestConnectSec": 5,
                             "maximumTestDurationSec": 10,
                             "testInterval": 60,
-                            "useProxy": False
-                        }
-                    }
-                }
+                            "useProxy": False,
+                        },
+                    },
+                },
             }
         }
         # POST SESSION DATA TO API AS JSON
-        add_session_post = login_session.post(session_config_url, headers=api_headers, data=json.dumps(session_data))
+        add_session_post = login_session.post(
+            session_config_url, headers=api_headers, data=json.dumps(session_data)
+        )
         add_session_post_text = add_session_post.text
+
+        time.sleep(60)
 
         parse_url = urlparse(destinationUrl)
         parse_url = str(parse_url.netloc)
-        parse_url = parse_url.split(':', 1)
+        parse_url = parse_url.split(":", 1)
         location_url = "http://ip-api.com/json/" + str(parse_url[0])
         location_session_post = location_session.get(location_url)
         geo_data = location_session_post.json()
-        geo_lat = geo_data['lat']
-        geo_lon = geo_data['lon']
-        print('SessionName ' + sessionName)
-        print('lat ' + str(geo_lat))
-        print('lon ' + str(geo_lon))
-        print('app ' + app)
-        print('geo ' + agentLocation)
+        geo_lat = geo_data["lat"]
+        geo_lon = geo_data["lon"]
+        print("SessionName " + sessionName)
+        print("lat " + str(geo_lat))
+        print("lon " + str(geo_lon))
+        print("app " + app)
+        print("geo " + agentLocation)
 
-        meta_url = tenant_url + \
-            "/api/v2/bulk/insert/monitored-objects/meta"
+        meta_url = tenant_url + "/api/v2/bulk/insert/monitored-objects/meta"
 
         session_data = {
             "data": {
@@ -149,30 +159,25 @@ def add_session():
                                 "destination_url": str(destinationUrl),
                                 "source_location": str(agentLocation),
                                 "site_name": str(site_name),
-                                "agent_role": str(agentrole)
+                                "agent_role": str(agentrole),
                             },
-                            "sourceLocation": {
-                                "lat": agentLat,
-                                "lon": agentLon
-                            },
-                            "destinationLocation": {
-                                "lat": geo_lat,
-                                "lon": geo_lon
-                            }
+                            "sourceLocation": {"lat": agentLat, "lon": agentLon},
+                            "destinationLocation": {"lat": geo_lat, "lon": geo_lon},
                         }
                     ]
-                }
+                },
             }
         }
 
-        print('session_data', session_data)
+        print("session_data", session_data)
         # POST SESSION DATA TO API AS JSON
         metadata_session_post = metadata_session.post(
-            meta_url, headers=api_headers, data=json.dumps(session_data))
+            meta_url, headers=api_headers, data=json.dumps(session_data)
+        )
         # PRINT RESPONSE
-        print('metadata_session_post ', metadata_session_post)
+        print("metadata_session_post ", metadata_session_post)
         metadata_session_post_text = metadata_session_post.text
-        print('metadata_session_post_text ', metadata_session_post_text)
+        print("metadata_session_post_text ", metadata_session_post_text)
 
         session_source_data.close()
 
