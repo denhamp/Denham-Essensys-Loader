@@ -1,0 +1,14 @@
+---
+tenant:
+  url: "https://essensys-asia.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-sg1-01
+  data_centre: sg1
+  lat: 1.2953133
+  lon: 103.7876619
+  city: "Singapore"
+  site_name: "20 Ayer Rajah Crescent, Singapore, SG, 139964"
+  agentrole: "primary"
+source:
+  file: "EssensysAppAPAC.json"

@@ -1,0 +1,14 @@
+---
+tenant:
+  url: "https://essensys-asia.analytics.accedian.io"
+  username: "dpearce@accedian.com"
+agent:
+  name: acc-xfr-me1-01
+  data_centre: me1
+  lat: -37.8230112
+  lon: 144.9131895
+  city: "Melbourne"
+  site_name: "578 Lorimer Street, Port Melbourne, AU, VIC 3207"
+  agentrole: "primary"
+source:
+  file: "EssensysAppAPAC.json"
