@@ -161,6 +161,7 @@ def add_session():
                             },
                             "sourceLocation": {"lat": agentLat, "lon": agentLon},
                             "destinationLocation": {"lat": geo_lat, "lon": geo_lon},
+                            "topology": [str(agentLocation), str(app)],
                         }
                     ]
                 },
